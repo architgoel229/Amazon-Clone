@@ -1,29 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Online Shopping site in India: Shop Online for Mobiles, Books, Watches,
+      Shoes and More - Amazon.in
+    </title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <div class="hoverElement">
+      <div class="accountContainer"></div>
+    </div> -->
     <!-- NAVIGATION BAR -->
     <nav>
-        <div class="upperNav">
-            <div class="logo">
-                <img src="/assets/logo.png" alt="">
-                  
-            </div>
-            <div class="location"></div>
-            
-            <div class="search"></div>
-            
-            <div class="lang"></div>
-            <div class="accountHandler"></div>
-            <div class="order"></div>
-            <div class="cart"></div>
+      
+      <div class="upperNav">
+        <div class="leftUpperNav">
+        <div class="logo">
+          <img src="/assets/logo.png" alt="" />
+          <div class="pseudoLogo">.in</div>
         </div>
-        <div class="lowerNav"></div>
+        <div class="location">
+          <i class="ri-map-pin-line"></i>
+          <div class="locationText">
+            <span class="deliverLocation">Delivering to your location</span>
+            <div class="locationUpdate">Update location</div>
+          </div>
+        </div>
+        </div>
+
+        <div class="search">
+          <select name="categeories" id="categeorySelection">
+            <option value="">All Categeories</option>
+            <option value="search-alias=alexa-skills">Alexa Skills</option>
+            <option value="search-alias=amazon-devices">Amazon Devices</option>
+            <option value="search-alias=fashion">Amazon Fashion</option>
+            <option value="search-alias=nowstore">Amazon Fresh</option>
+            <option value="search-alias=freshmeat">Amazon Fresh Meat</option>
+            <option value="search-alias=amazon-pharmacy">
+              Amazon Pharmacy
+            </option>
+            <option value="search-alias=appliances">Appliances</option>
+            <option value="search-alias=mobile-apps">Apps &amp; Games</option>
+            <option value="search-alias=audible">Audible Audiobooks</option>
+            <option value="search-alias=baby">Baby</option>
+            <option value="search-alias=beauty">Beauty</option>
+            <option value="search-alias=stripbooks">Books</option>
+            <option value="search-alias=automotive">Car &amp; Motorbike</option>
+            <option value="search-alias=apparel">
+              Clothing &amp; Accessories
+            </option>
+            <option value="search-alias=collectibles">Collectibles</option>
+            <option value="search-alias=computers">
+              Computers &amp; Accessories
+            </option>
+            <option value="search-alias=todays-deals">Deals</option>
+            <option value="search-alias=electronics">Electronics</option>
+            <option value="search-alias=furniture">Furniture</option>
+            <option value="search-alias=lawngarden">
+              Garden &amp; Outdoors
+            </option>
+            <option value="search-alias=gift-cards">Gift Cards</option>
+            <option value="search-alias=grocery">
+              Grocery &amp; Gourmet Foods
+            </option>
+            <option value="search-alias=hpc">Health &amp; Personal Care</option>
+            <option value="search-alias=kitchen">Home &amp; Kitchen</option>
+            <option value="search-alias=industrial">
+              Industrial &amp; Scientific
+            </option>
+            <option value="search-alias=jewelry">Jewellery</option>
+            <option value="search-alias=digital-text">Kindle Store</option>
+            <option value="search-alias=luggage">Luggage &amp; Bags</option>
+            <option value="search-alias=luxury-beauty">Luxury Beauty</option>
+            <option value="search-alias=dvd">Movies &amp; TV Shows</option>
+            <option value="search-alias=digital-music">MP3 Music</option>
+            <option value="search-alias=popular">Music</option>
+            <option value="search-alias=mi">Musical Instruments</option>
+            <option value="search-alias=office-products">
+              Office Products
+            </option>
+            <option value="search-alias=pets">Pet Supplies</option>
+            <option value="search-alias=instant-video">Prime Video</option>
+            <option value="search-alias=shoes">Shoes &amp; Handbags</option>
+            <option value="search-alias=software">Software</option>
+            <option value="search-alias=sporting">
+              Sports, Fitness &amp; Outdoors
+            </option>
+            <option value="search-alias=specialty-aps-sns">
+              Subscribe &amp; Save
+            </option>
+            <option value="search-alias=home-improvement">
+              Tools &amp; Home Improvement
+            </option>
+            <option value="search-alias=toys">Toys &amp; Games</option>
+            <option value="search-alias=under-ten-dollars">Under ₹500</option>
+            <option value="search-alias=videogames">Video Games</option>
+            <option value="search-alias=watches">Watches</option>
+          </select>
+          <input type="text" placeholder="Search Amazon.in" />
+          <button><i class="ri-search-line"></i></button>
+        </div>
+        <div class="rightUpperNav" onmouseleave="document.querySelector('.accContainer').style.display='none';document.querySelector('.hoverElement').style.display='none'">
+        <div class="lang">
+          <label for="selectLang">
+            <img src="assets/indianFlag.webp" alt="">
+          </label>
+          <select name="Language" id="selectLang">
+              <option value="en">EN</option>
+            <option value="hi">HI</option>
+            <option value="ta">TA</option>
+            <option value="te">TE</option>
+            <option value="kn">KN</option>
+            <option value="ml">ML</option>
+            <option value="bn">BN</option>
+            <option value="mr">MR</option>
+          </select>
+        </div>
+        <div class="accountHandler" onmouseover="document.querySelector('.accContainer').style.display='block';document.querySelector('.hoverElement').style.display='block'" >
+          <div class="greeting">Hello, <span>sign in</span></div>
+          <div class="accAndList">Account & Lists</div>
+          <div class="accContainer" onmouseleave="document.querySelector('.accContainer').style.display='none';document.querySelector('.hoverElement').style.display='none'">
+            <div class="headAccContainer">
+              <input type="button" value="Sign in">
+              <div class="signUp">
+                <span>New customer?<a href="">Start here</a></span>
+              </div>
+              </div>
+              <div class="bodyAccContainer">
+                <div class="leftBodyAccContainer">
+                  <h3>Your Lists</h3>
+                  <li>Create a Wishlist</li>
+                  <li>Wishlist from Any Website</li>
+                  <li>Baby Wishlist</li>
+                  <li>Discover Your Style</li>
+                  <li>Explore Showroom</li>
+                </div>
+                <div class="rightBodyAccContainer">
+                  <h3>Your Account</h3>
+                  <li>Your Account</li>
+                  <li>Your Orders</li>
+                  <li>Your Wishlist</li>
+                  <li>Your Recomendations</li>
+                  <li>Your Prime Membership</li>
+                  <li>Your Prime Video</li>
+                  <li>Your Subscrbe & Save Items</li>
+                  <li>Memberships &Subscriptions</li>
+                  <li>Your Seller Account</li>
+                  <li>Manage Your Content & Devices</li>
+                  <li>Register for a free Business Account</li>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        <div class="hoverElement"></div>
+        <div class="order">
+          <div class="return">Returns</div>
+          <div class="orders">& Orders</div>
+        </div>
+        <div class="cart">
+          <img src="assets/cartIcon.png" alt="">
+          <div class="number">0</div>
+          <div class="cartText">Cart</div>
+        </div>
+      </div>
+      </div>
+      <div class="lowerNav" onmouseover="document.querySelector('.accContainer').style.display='none';document.querySelector('.hoverElement').style.display='none'">
+        <div class="lowerNavPrev" onclick="document.querySelector('.lowerNavItems').scrollLeft-=300"><i class="ri-arrow-left-s-line"></i></div>
+        <div class="lowerNavNext" onclick="document.querySelector('.lowerNavItems').scrollLeft+=300"><i class="ri-arrow-right-s-line"></i></div>
+        <div class="lowerNavItems">
+        <a href="">Sell</a>
+        <a href="">Best Seller</a>
+        <a href="">Mobiles</a>
+        <a href="">Today's Deal</a>
+        <a href="">Prime</a>
+        <a href="">Customer Sevice</a>
+        <a href="">Electronics</a>
+        <a href="">Fashion</a>
+        </div>
+      </div>
     </nav>
-</body>
+    <script>
+      let lowerNavScroll=20;
+    </script>
+  </body>
 </html>
