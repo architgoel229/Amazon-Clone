@@ -47,9 +47,14 @@ nav{
     gap: 10px;
 }
 
+.upperNav a{
+    text-decoration: none;
+}
+
 .upperNav .logo{
     display: flex;
     padding: 20px 5px;
+    cursor: pointer;
 }
 
 .upperNav .logo img{
@@ -60,12 +65,15 @@ nav{
 .pseudoLogo{
     padding: 1px 0 0 1px;
     font-weight: 500;
+    color: white;
+    /* text-decoration: none; */
 }
 
 .upperNav .location{
     display: flex;
     align-items: end;
     padding: 0 0 10px 0;
+    cursor: pointer;
 }
 
 .upperNav .location i{
@@ -153,6 +161,10 @@ nav{
     border: none;
 }
 
+.upperNav .accountHandler{
+    cursor:pointer;
+}
+
 .upperNav .accountHandler .greeting{
     font-weight: 400;
     font-size: 0.8rem;
@@ -230,6 +242,10 @@ nav{
     border-left: 1px solid rgba(0, 0, 0, 0.5);
 }
 
+.upperNav .order{
+    cursor: pointer;
+}
+
 .upperNav .order .return{
     font-weight: 400;
     font-size: 0.8rem;
@@ -243,7 +259,7 @@ nav{
 
 .upperNav .cart{
     position: relative;
-     
+     cursor: pointer;
     display: flex;
     align-items: center;
 }
