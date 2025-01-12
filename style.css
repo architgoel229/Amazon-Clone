@@ -324,11 +324,90 @@ nav{
     white-space: nowrap;
 }
 
+.carouselMasterContainer{
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+
+.carouselContainer{
+    width: 100%;
+    overflow-x: auto;
+    display: flex;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+}
+
+.carouselContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.carouselContainer .carouselItem{
+    width: 100%;
+    scroll-snap-align: start;
+    /* scroll-snap-stop: always; */
+}
+.carouselItem img{
+    width: 100vw;
+    /* height: 75vh; */
+    object-fit: cover;
+}
+
+.carouselControlPrev, .carouselControlNext{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 0 10px black;
+    top: 0;
+    height: 50%;
+    padding: 2rem;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.carouselControlPrev{
+    left:0;
+}
+
+.carouselControlNext{
+    right: 0;
+}
+
+.bottomChin{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 50%;
+    background: linear-gradient(0deg,rgba(227, 230, 232, 1),rgba(227, 230, 232, 0));
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* @keyframes carouselAnimation {
+    0%{
+        .carouselContainer{
+            scrollLeft:
+        }
+    }
+} */
 
 
 
@@ -350,5 +429,14 @@ nav{
     }
     .accContainer{
         right: unset;
+    }
+
+    .carouselItem img{
+        height: 33vh;
+        object-position: top;
+    }
+    .carouselControlNext, .carouselControlPrev{
+        padding: 0.5rem;
+        font-size: 2.5rem;
     }
 }

@@ -19,22 +19,21 @@
     </div> -->
     <!-- NAVIGATION BAR -->
     <nav>
-      
       <div class="upperNav">
         <div class="leftUpperNav">
           <a href="index.html">
-        <div class="logo">
-          <img src="/assets/logo.png" alt="" />
-          <div class="pseudoLogo">.in</div>
-        </div>
-        </a>
-        <div class="location">
-          <i class="ri-map-pin-line"></i>
-          <div class="locationText">
-            <span class="deliverLocation">Delivering to your location</span>
-            <div class="locationUpdate">Update location</div>
+            <div class="logo">
+              <img src="/assets/logo.png" alt="" />
+              <div class="pseudoLogo">.in</div>
+            </div>
+          </a>
+          <div class="location">
+            <i class="ri-map-pin-line"></i>
+            <div class="locationText">
+              <span class="deliverLocation">Delivering to your location</span>
+              <div class="locationUpdate">Update location</div>
+            </div>
           </div>
-        </div>
         </div>
 
         <div class="search">
@@ -109,31 +108,40 @@
           <input type="text" placeholder="Search Amazon.in" />
           <button><i class="ri-search-line"></i></button>
         </div>
-        <div class="rightUpperNav" onmouseleave="document.querySelector('.accContainer').style.display='none';document.querySelector('.hoverElement').style.display='none'">
-        <div class="lang">
-          <label for="selectLang">
-            <img src="assets/indianFlag.webp" alt="">
-          </label>
-          <select name="Language" id="selectLang">
+        <div
+          class="rightUpperNav"
+          onmouseleave="document.querySelector('.accContainer').style.display='none';document.querySelector('.hoverElement').style.display='none'"
+        >
+          <div class="lang">
+            <label for="selectLang">
+              <img src="assets/indianFlag.webp" alt="" />
+            </label>
+            <select name="Language" id="selectLang">
               <option value="en">EN</option>
-            <option value="hi">HI</option>
-            <option value="ta">TA</option>
-            <option value="te">TE</option>
-            <option value="kn">KN</option>
-            <option value="ml">ML</option>
-            <option value="bn">BN</option>
-            <option value="mr">MR</option>
-          </select>
-        </div>
-        <div class="accountHandler" onmouseover="document.querySelector('.accContainer').style.display='block';document.querySelector('.hoverElement').style.display='block'" >
-          <div class="greeting">Hello, <span>sign in</span></div>
-          <div class="accAndList">Account & Lists</div>
-          <div class="accContainer" onmouseleave="document.querySelector('.accContainer').style.display='none';document.querySelector('.hoverElement').style.display='none'">
-            <div class="headAccContainer">
-              <input type="button" value="Sign in">
-              <div class="signUp">
-                <span>New customer?<a href="">Start here</a></span>
-              </div>
+              <option value="hi">HI</option>
+              <option value="ta">TA</option>
+              <option value="te">TE</option>
+              <option value="kn">KN</option>
+              <option value="ml">ML</option>
+              <option value="bn">BN</option>
+              <option value="mr">MR</option>
+            </select>
+          </div>
+          <div
+            class="accountHandler"
+            onmouseover="document.querySelector('.accContainer').style.display='block';document.querySelector('.hoverElement').style.display='block'"
+          >
+            <div class="greeting">Hello, <span>sign in</span></div>
+            <div class="accAndList">Account & Lists</div>
+            <div
+              class="accContainer"
+              onmouseleave="document.querySelector('.accContainer').style.display='none';document.querySelector('.hoverElement').style.display='none'"
+            >
+              <div class="headAccContainer">
+                <input type="button" value="Sign in" />
+                <div class="signUp">
+                  <span>New customer?<a href="">Start here</a></span>
+                </div>
               </div>
               <div class="bodyAccContainer">
                 <div class="leftBodyAccContainer">
@@ -159,38 +167,95 @@
                   <li>Register for a free Business Account</li>
                 </div>
               </div>
-            
+            </div>
+          </div>
+          <div class="hoverElement"></div>
+          <div class="order">
+            <div class="return">Returns</div>
+            <div class="orders">& Orders</div>
+          </div>
+          <div class="cart">
+            <img src="assets/cartIcon.png" alt="" />
+            <div class="number">0</div>
+            <div class="cartText">Cart</div>
           </div>
         </div>
-        <div class="hoverElement"></div>
-        <div class="order">
-          <div class="return">Returns</div>
-          <div class="orders">& Orders</div>
-        </div>
-        <div class="cart">
-          <img src="assets/cartIcon.png" alt="">
-          <div class="number">0</div>
-          <div class="cartText">Cart</div>
-        </div>
       </div>
-      </div>
-      <div class="lowerNav" onmouseover="document.querySelector('.accContainer').style.display='none';document.querySelector('.hoverElement').style.display='none'">
-        <div class="lowerNavPrev" onclick="document.querySelector('.lowerNavItems').scrollLeft-=300"><i class="ri-arrow-left-s-line"></i></div>
-        <div class="lowerNavNext" onclick="document.querySelector('.lowerNavItems').scrollLeft+=300"><i class="ri-arrow-right-s-line"></i></div>
+      <div
+        class="lowerNav"
+        onmouseover="document.querySelector('.accContainer').style.display='none';document.querySelector('.hoverElement').style.display='none'"
+      >
+        <div
+          class="lowerNavPrev"
+          onclick="document.querySelector('.lowerNavItems').scrollLeft-=300"
+        >
+          <i class="ri-arrow-left-s-line"></i>
+        </div>
+        <div
+          class="lowerNavNext"
+          onclick="document.querySelector('.lowerNavItems').scrollLeft+=300"
+        >
+          <i class="ri-arrow-right-s-line"></i>
+        </div>
         <div class="lowerNavItems">
-        <a href="">Sell</a>
-        <a href="">Best Seller</a>
-        <a href="">Mobiles</a>
-        <a href="">Today's Deal</a>
-        <a href="">Prime</a>
-        <a href="">Customer Sevice</a>
-        <a href="">Electronics</a>
-        <a href="">Fashion</a>
+          <a href="">Sell</a>
+          <a href="">Best Seller</a>
+          <a href="">Mobiles</a>
+          <a href="">Today's Deal</a>
+          <a href="">Prime</a>
+          <a href="">Customer Sevice</a>
+          <a href="">Electronics</a>
+          <a href="">Fashion</a>
         </div>
       </div>
     </nav>
-    <script>
-      let lowerNavScroll=20;
-    </script>
+    <main>
+      <div class="carouselMasterContainer">
+        <div class="carouselContainer">
+          <div class="carouselItem">
+            <img src="assets/slider1.jpg" alt="" />
+          </div>
+          <div class="carouselItem">
+            <img src="assets/slider2.jpg" alt="" />
+          </div>
+          <div class="carouselItem">
+            <img src="assets/slider3.jpg" alt="" />
+          </div>
+          <div class="carouselItem">
+            <img src="assets/slider4.jpg" alt="" />
+          </div>
+          <div class="carouselItem">
+            <img src="assets/slider5.jpg" alt="" />
+          </div>
+          <div class="carouselItem">
+            <img src="assets/slider6.jpg" alt="" />
+          </div>
+          <div class="carouselItem">
+            <img src="assets/slider7.jpg" alt="" />
+          </div>
+          <div class="carouselItem">
+            <img src="assets/slider8.jpg" alt="" />
+          </div>
+        </div>
+        <div
+          class="carouselControlPrev"
+          onclick="moveToPrevSlide()"
+          onmouseover="clearInterval(autoSlideInterval);"
+          onmouseleave=" autoSlideInterval = setInterval(moveToNextSlide, 5000);">
+          <i class="ri-arrow-left-wide-line"></i>
+        </div>
+        <div
+          class="carouselControlNext"
+          onclick="moveToNextSlide()"
+          onmouseover="clearInterval(autoSlideInterval);"
+          onmouseleave=" autoSlideInterval = setInterval(moveToNextSlide, 5000); "
+        >
+          <i class="ri-arrow-right-wide-line"></i>
+        </div>
+        <div class="bottomChin"></div>
+      </div>
+      
+      <script src="/script.js"></script>
+    </main>
   </body>
 </html>
