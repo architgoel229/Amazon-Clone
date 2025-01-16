@@ -655,7 +655,7 @@ footer .mainFooter{
 footer .mainInnerFooter{   
     padding: 25px;
     display: flex; 
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap; 
     color: #ffffff;
     border-bottom: 1px solid rgba(255, 255, 255, 0.75);
@@ -681,6 +681,10 @@ footer .mainFooter li a{
     font-size: 0.8rem;
 }
 
+footer .mainFooter li a:hover{
+    text-decoration: underline;
+}
+
 .bottomFooter{
     padding:5vh 10vw;
     display: flex;
@@ -688,29 +692,6 @@ footer .mainFooter li a{
     justify-content: space-between;
     align-items: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @keyframes carouselAnimation {
-    0%{
-        .carouselContainer{
-            scrollLeft:
-        }
-    }
-} */
-
-
 
 @media only screen and (max-width:840px){
     .upperNav{
