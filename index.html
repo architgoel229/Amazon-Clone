@@ -15,9 +15,6 @@
     />
   </head>
   <body>
-    <!-- <div class="hoverElement">
-      <div class="accountContainer"></div>
-    </div> -->
     <!-- NAVIGATION BAR -->
     <nav>
       <div class="upperNav">
@@ -40,71 +37,51 @@
         <div class="search">
           <select name="categeories" id="categeorySelection">
             <option value="">All Categeories</option>
-            <option value="search-alias=alexa-skills">Alexa Skills</option>
-            <option value="search-alias=amazon-devices">Amazon Devices</option>
-            <option value="search-alias=fashion">Amazon Fashion</option>
-            <option value="search-alias=nowstore">Amazon Fresh</option>
-            <option value="search-alias=freshmeat">Amazon Fresh Meat</option>
-            <option value="search-alias=amazon-pharmacy">
-              Amazon Pharmacy
-            </option>
-            <option value="search-alias=appliances">Appliances</option>
-            <option value="search-alias=mobile-apps">Apps &amp; Games</option>
-            <option value="search-alias=audible">Audible Audiobooks</option>
-            <option value="search-alias=baby">Baby</option>
-            <option value="search-alias=beauty">Beauty</option>
-            <option value="search-alias=stripbooks">Books</option>
-            <option value="search-alias=automotive">Car &amp; Motorbike</option>
-            <option value="search-alias=apparel">
-              Clothing &amp; Accessories
-            </option>
-            <option value="search-alias=collectibles">Collectibles</option>
-            <option value="search-alias=computers">
-              Computers &amp; Accessories
-            </option>
-            <option value="search-alias=todays-deals">Deals</option>
-            <option value="search-alias=electronics">Electronics</option>
-            <option value="search-alias=furniture">Furniture</option>
-            <option value="search-alias=lawngarden">
-              Garden &amp; Outdoors
-            </option>
-            <option value="search-alias=gift-cards">Gift Cards</option>
-            <option value="search-alias=grocery">
-              Grocery &amp; Gourmet Foods
-            </option>
-            <option value="search-alias=hpc">Health &amp; Personal Care</option>
-            <option value="search-alias=kitchen">Home &amp; Kitchen</option>
-            <option value="search-alias=industrial">
-              Industrial &amp; Scientific
-            </option>
-            <option value="search-alias=jewelry">Jewellery</option>
-            <option value="search-alias=digital-text">Kindle Store</option>
-            <option value="search-alias=luggage">Luggage &amp; Bags</option>
-            <option value="search-alias=luxury-beauty">Luxury Beauty</option>
-            <option value="search-alias=dvd">Movies &amp; TV Shows</option>
-            <option value="search-alias=digital-music">MP3 Music</option>
-            <option value="search-alias=popular">Music</option>
-            <option value="search-alias=mi">Musical Instruments</option>
-            <option value="search-alias=office-products">
-              Office Products
-            </option>
-            <option value="search-alias=pets">Pet Supplies</option>
-            <option value="search-alias=instant-video">Prime Video</option>
-            <option value="search-alias=shoes">Shoes &amp; Handbags</option>
-            <option value="search-alias=software">Software</option>
-            <option value="search-alias=sporting">
-              Sports, Fitness &amp; Outdoors
-            </option>
-            <option value="search-alias=specialty-aps-sns">
-              Subscribe &amp; Save
-            </option>
-            <option value="search-alias=home-improvement">
-              Tools &amp; Home Improvement
-            </option>
-            <option value="search-alias=toys">Toys &amp; Games</option>
-            <option value="search-alias=under-ten-dollars">Under ₹500</option>
-            <option value="search-alias=videogames">Video Games</option>
-            <option value="search-alias=watches">Watches</option>
+            <option value="">Alexa Skills</option>
+            <option value="">Amazon Devices</option>
+            <option value="">Amazon Fashion</option>
+            <option value="">Amazon Fresh</option>
+            <option value="">Amazon Fresh Meat</option>
+            <option value="">Amazon Pharmacy</option>
+            <option value="">Appliances</option>
+            <option value="">Apps &amp; Games</option>
+            <option value="">Audible Audiobooks</option>
+            <option value="">Baby</option>
+            <option value="">Beauty</option>
+            <option value="">Books</option>
+            <option value="">Car &amp; Motorbike</option>
+            <option value="">Clothing &amp; Accessories</option>
+            <option value="">Collectibles</option>
+            <option value="">Computers &amp; Accessories</option>
+            <option value="">Deals</option>
+            <option value="">Electronics</option>
+            <option value="">Furniture</option>
+            <option value="">Garden &amp; Outdoors</option>
+            <option value="">Gift Cards</option>
+            <option value="">Grocery &amp; Gourmet Foods</option>
+            <option value="">Health &amp; Personal Care</option>
+            <option value="">Home &amp; Kitchen</option>
+            <option value="">Industrial &amp; Scientific</option>
+            <option value="">Jewellery</option>
+            <option value="">Kindle Store</option>
+            <option value="">Luggage &amp; Bags</option>
+            <option value="">Luxury Beauty</option>
+            <option value="">Movies &amp; TV Shows</option>
+            <option value="">MP3 Music</option>
+            <option value="">Music</option>
+            <option value="">Musical Instruments</option>
+            <option value="">Office Products</option>
+            <option value="">Pet Supplies</option>
+            <option value="">Prime Video</option>
+            <option value="">Shoes &amp; Handbags</option>
+            <option value="">Software</option>
+            <option value="">Sports, Fitness &amp; Outdoors</option>
+            <option value="">Subscribe &amp; Save</option>
+            <option value="">Tools &amp; Home Improvement</option>
+            <option value="">Toys &amp; Games</option>
+            <option value="">Under ₹500</option>
+            <option value="">Video Games</option>
+            <option value="">Watches</option>
           </select>
           <input type="text" placeholder="Search Amazon.in" />
           <button><i class="ri-search-line"></i></button>
@@ -113,7 +90,7 @@
           class="rightUpperNav"
           onmouseleave="document.querySelector('.accContainer').style.display='none';document.querySelector('.hoverElement').style.display='none'"
         >
-          <div class="lang">
+          <div class="lang" onmouseover="document.querySelector('.accContainer').style.display='none';document.querySelector('.hoverElement').style.display='none'">
             <label for="selectLang">
               <img src="assets/indianFlag.webp" alt="" />
             </label>
@@ -130,7 +107,7 @@
           </div>
           <div
             class="accountHandler"
-            onmouseover="document.querySelector('.accContainer').style.display='block';document.querySelector('.hoverElement').style.display='block'"
+            onmouseover="document.querySelector('.accContainer').style.display='block';document.querySelector('.hoverElement').style.display='block'" 
           >
             <div class="greeting">Hello, <span>sign in</span></div>
             <div class="accAndList">Account & Lists</div>
@@ -171,7 +148,7 @@
             </div>
           </div>
           <div class="hoverElement"></div>
-          <div class="order">
+          <div class="order" onmouseover="document.querySelector('.accContainer').style.display='none';document.querySelector('.hoverElement').style.display='none'">
             <div class="return">Returns</div>
             <div class="orders">& Orders</div>
           </div>
@@ -737,12 +714,12 @@
           <div class="HelpYou footerItem">
             <h2>
               	Let Us Help You
+              Returns Centre
+            </a></li>
+            <li><a href="">
             </h2>
             <li><a href="">
               Your Account
-            </a></li>
-            <li><a href="">
-              Returns Centre
             </a></li>
             <li><a href="">
               Recalls and Product Safety Alerts
