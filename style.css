@@ -233,6 +233,10 @@ nav{
     color: rgba(0, 0, 0, 0.75);
 }
 
+.headAccContainer a{
+    color: #2162a1;
+}
+
 .bodyAccContainer{
     display: flex;
     align-items: start;
@@ -716,7 +720,9 @@ footer .mainFooter li a:hover{
         display: block;
     }
     .accContainer{
-        right: unset;
+        margin: 0;
+        right: 0;
+        width: 100vw;
     }
 
     .carouselItem img{
@@ -726,5 +732,8 @@ footer .mainFooter li a:hover{
     .carouselControlNext, .carouselControlPrev{
         padding: 0.5rem;
         font-size: 2.5rem;
+    }
+        .bottomFooter .lang{
+        display: flex !important;
     }
 }
